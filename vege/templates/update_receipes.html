@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block start %}
+ 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  .text{
+    color: green;
+    font-weight: bold;
+  }
+</style>
+ 
+<div class="container mt-5">
+ 
+  <form class="col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h2 class="text  text-center"> GeeksforGeeks </h2>
+     
+    <h1>Update Recipe</h1>
+<hr>
+<form method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="receipeName" class="form-label">Recipe Name</label>
+    <input 
+      id="receipeName" 
+      name="receipe_name" 
+      value="{{receipe.receipe_name}}" 
+      type="text" 
+      class="form-control" 
+      required>
+  </div>
+
+  <div class="mb-3">
+    <label for="receipeDescription" class="form-label">Recipe Description</label>
+    <textarea 
+      id="receipeDescription" 
+      class="form-control" 
+      name="receipe_description" 
+      required>{{receipe.receipe_description}}</textarea>
+  </div>
+
+  <div class="mb-3">
+    <label for="receipeImage" class="form-label">Recipe Image</label>
+    <input 
+      id="receipeImage" 
+      name="receipe_image" 
+      type="file" 
+      class="form-control">
+  </div>
+
+  <button type="submit" class="btn btn-success">Update Recipe</button>
+</form>
+
+ 
+ 
+</div>
+ 
+{% endblock %}
