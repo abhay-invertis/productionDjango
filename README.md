@@ -1,9 +1,6 @@
 Recipe Management App 🍴
 A Django-based web application that allows users to explore, manage, and create recipes effortlessly.
 
-🚀 Functionality
-Browse Recipes:
-Users can view a list of recipes with details like ingredients, preparation steps, and cooking time.
 
 Search Recipes:
 Find recipes easily by entering keywords, ingredients, or recipe names.
@@ -14,11 +11,6 @@ Users can contribute by adding their own recipes, including ingredients, instruc
 Edit/Delete Recipes:
 Recipes can be updated or deleted to maintain an organized collection.
 
-Category Management:
-Recipes are categorized (e.g., Appetizers, Main Course, Desserts) for better navigation.
-
-User Authentication:
-Secure login and signup functionality to personalize the user experience.
 
 ✨ Features
 Responsive Design:
@@ -37,10 +29,10 @@ Django Admin Panel:
 Built-in admin interface for managing recipes and user contributions.
 
 🛠️ Tech Stack
-Frontend: HTML, CSS, JavaScript
+Frontend: HTML, CSS, JavaScript,Bootstrap
 Backend: Django (Python)
-Database: SQLite (or replace with PostgreSQL/MySQL, if applicable)
-Hosting: Deployed on (mention hosting platform, if any, like Heroku, AWS, etc.)
+Database: SQLite 
+Hosting: Deployed on render
 
 
 🚧 Future Enhancements
